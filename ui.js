@@ -10,7 +10,7 @@ class UI {
         
         <div class="pro" style="width: 74%;" >
         
-        <img src="${user.avatar_url}" alt="img" class=" mb-3">
+        <img src="${user.avatar_url}" alt="img" class="mb-3 img-porfile">
         <a href="${user.html_url}" class="btn btn-primary" style="width:58%;" target="_blank">go to github user</a>
     
         </div>

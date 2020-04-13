@@ -1,0 +1,13 @@
+@media (max-width: 575.98px) {
+    .profile .img-porfile{
+        width: 135%;
+    }
+        
+   
+    .btn-primary{
+        width: 137% !important;
+    }
+    .list-group{
+        width: 100% !important;
+    }
+}
