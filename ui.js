@@ -52,7 +52,7 @@ class UI {
         searching.insertBefore(alert, search);
     }
     clearAlert(){
-        let curentError = document.querySelector('.alert-danger');
+        let curentError = document.querySelector('.alert');
         if(curentError){
             curentError.remove();
         }
