@@ -3,15 +3,21 @@ let ui = new UI();
 
 let btnsearch = document.querySelector('#searchUser');
 let input = document.querySelector('.text-box');
-
+input.addEventListener('keyup', e=>{
+    if(input.value === ''){
+        ui.clearprofile();
+    }
+})
 btnsearch.addEventListener('click' , e =>{
     let search = input.value;
     if(search === ''){
-        ui.clearprofile();
+        ui.showalert('please search the user' , 'alert alert-danger');
+        
     }else{
         github.usergit(search).then(data =>{
             if(data.profile.message){
-                showalert();
+                ui.showalert('user not found' , 'alert alert-warning');
+                ui.clearprofile();
             }else{
                 ui.progithub(data.profile);
             }
