@@ -42,6 +42,7 @@ class UI {
     }
 
     showalert(msg,className){
+        this.clearAlert();
         let searching = document.querySelector('.searching');
         let search = document.querySelector('.search');
         const alert = document.createElement('div');
@@ -49,5 +50,11 @@ class UI {
         alert.textContent = msg;
 
         searching.insertBefore(alert, search);
+    }
+    clearAlert(){
+        let curentError = document.querySelector('.alert-danger');
+        if(curentError){
+            curentError.remove();
+        }
     }
 }
