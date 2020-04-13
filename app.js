@@ -7,11 +7,14 @@ input.addEventListener('keyup', e=>{
     if(input.value === ''){
         ui.clearprofile();
     }
-})
+});
 btnsearch.addEventListener('click' , e =>{
     let search = input.value;
     if(search === ''){
         ui.showalert('please search the user' , 'alert alert-danger');
+        setTimeout(()=>{
+            ui.clearAlert();
+        },2000);
         
     }else{
         github.usergit(search).then(data =>{
@@ -23,4 +26,4 @@ btnsearch.addEventListener('click' , e =>{
             }
         })
     }
-})
+});
