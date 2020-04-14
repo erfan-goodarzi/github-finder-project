@@ -1,14 +1,24 @@
 @media (max-width: 575.98px) {
     .profile .img-porfile{
         width: 135%;
+
     }
         
+    .loaded{
+        margin-left: -1rem !important;
+    margin-top: -1rem !important;
+    width: 108% !important;
+    z-index: 2;
+    }
    
     .btn-primary{
         width: 137% !important;
     }
     .list-group{
         width: 100% !important;
+        margin-left: -15rem !important;
+    
+    padding-top: 25rem !important;
     }
 }
 .loaded{
