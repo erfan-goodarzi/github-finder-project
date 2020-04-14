@@ -5,12 +5,16 @@ let btnsearch = document.querySelector('#searchUser');
 let input = document.querySelector('.text-box');
 input.addEventListener('keyup', e=>{
     if(input.value === ''){
+        btnsearch.removeAttribute('disabled');
         ui.clearprofile();
+        
     }
 })
 btnsearch.addEventListener('click' , e =>{
     document.querySelector('.loaded').style.display = 'block';
     setTimeout(porfilegithub,3000)
+ 
+    
 })
 
 function porfilegithub(){
@@ -29,7 +33,7 @@ function porfilegithub(){
             }else{
                 document.querySelector('.loaded').style.display = 'none';
                 ui.progithub(data.profile);
-                
+                btnsearch.setAttribute('disabled', false);
             }
         })
     }
