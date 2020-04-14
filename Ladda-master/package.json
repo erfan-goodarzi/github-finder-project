@@ -1,0 +1,42 @@
+{
+  "name": "ladda",
+  "version": "2.0.1",
+  "description": "Buttons with built-in loading indicators",
+  "homepage": "https://lab.hakim.se/ladda/",
+  "files": [
+    "css/*.scss",
+    "dist/*.css",
+    "js/ladda.d.ts",
+    "js/ladda.js"
+  ],
+  "main": "./js/ladda.js",
+  "types": "./js/ladda.d.ts",
+  "scripts": {
+    "test": "grunt jshint",
+    "prepare": "grunt && rollup -c",
+    "start": "grunt serve"
+  },
+  "author": "Hakim El Hattab <hakim.elhattab@gmail.com> https://hakim.se",
+  "contributors": [
+    "Theodore Brown <theodorejb@outlook.com> https://theodorejb.me"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hakimel/Ladda.git"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.11.0",
+    "rollup": "^1.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "spin.js": "^4.0.0"
+  }
+}

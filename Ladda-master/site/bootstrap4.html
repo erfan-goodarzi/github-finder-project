@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Ladda: Bootstrap compatibility test</title>
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="demo.css">
+		<link rel="stylesheet" href="dist/ladda-themeless.min.css">
+	</head>
+	<body>
+		<article class="examples">
+			<div class="intro">
+				<h1>Ladda Bootstrap 4 test</h1>
+			</div>
+
+            <section>
+				<h3>expand-left</h3>
+				<button class="btn btn-primary ladda-button" data-color="green" data-style="expand-left"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section>
+				<h3>expand-right</h3>
+				<button class="btn btn-primary ladda-button" data-color="green" data-style="expand-right"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section>
+				<h3>expand-up</h3>
+				<button class="btn btn-primary ladda-button" data-color="green" data-style="expand-up"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section>
+				<h3>expand-down</h3>
+				<button class="btn btn-primary ladda-button" data-color="green" data-style="expand-down"><span class="ladda-label">Submit</span></button>
+			</section>
+
+
+			<section>
+				<h3>zoom-in</h3>
+				<button class="btn btn-info ladda-button" data-color="red" data-style="zoom-in"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section>
+				<h3>zoom-out</h3>
+				<button class="btn btn-info ladda-button" data-color="red" data-style="zoom-out"><span class="ladda-label">Submit</span></button>
+			</section>
+
+
+			<section>
+				<h3>slide-left</h3>
+				<button class="btn btn-warning ladda-button" data-color="blue" data-style="slide-left"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section>
+				<h3>slide-right</h3>
+				<button class="btn btn-warning ladda-button" data-color="blue" data-style="slide-right"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section>
+				<h3>slide-up</h3>
+				<button class="btn btn-warning ladda-button" data-color="blue" data-style="slide-up"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section>
+				<h3>slide-down</h3>
+				<button class="btn btn-warning ladda-button" data-color="blue" data-style="slide-down"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<h3 id="progress">Built-in progress bar</h3>
+
+			<section class="progress-demo">
+				<h3>expand-right</h3>
+				<button class="btn btn-danger ladda-button" data-color="purple" data-style="expand-right"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section class="progress-demo">
+				<h3>contract</h3>
+				<button class="btn btn-danger ladda-button" data-color="purple" data-style="contract"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<h3 id="sizes">Sizes</h3>
+
+			<section class="progress-demo">
+				<h3>Extra Small</h3>
+				<button class="btn btn-danger btn-mini ladda-button" data-color="mint" data-style="expand-right" data-size="xs"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section class="progress-demo">
+				<h3>Small</h3>
+				<button class="btn btn-danger btn-small ladda-button" data-color="mint" data-style="expand-right" data-size="s"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<section class="progress-demo">
+				<h3>Large</h3>
+				<button class="btn btn-danger btn-large ladda-button" data-color="mint" data-style="expand-right" data-size="l"><span class="ladda-label">Submit</span></button>
+			</section>
+
+			<h3>Buttons in forms containing required inputs</h3>
+
+			<section>
+				<form>
+					<div class="form-group">
+						<input type="text" required name="aText" placeholder="Please fill me" />
+					</div>
+					<div class="form-group">
+						<button id="aFormSubmitButton" type="submit" class="btn btn-primary ladda-button" data-color="green" data-style="expand-left"><span class="ladda-label">Submit</span></button>
+					</div>
+				</form>
+			</section>
+		</article>
+
+		<script src="dist/bootstrap-bundle.js"></script>
+	</body>
+</html>

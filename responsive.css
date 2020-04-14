@@ -11,3 +11,8 @@
         width: 100% !important;
     }
 }
+.loaded{
+    margin-left: 7rem;
+    margin-top: -10rem;
+    display: none; 
+}
